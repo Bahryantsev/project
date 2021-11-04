@@ -1,0 +1,22 @@
+.item{
+    
+    margin-right: 20px;
+    list-style-type: none;
+}
+.link{
+    color:#fff;
+    text-decoration: none;
+}
+.item::after{
+    content: '';
+    display: block;
+	border-bottom: yellow 2px solid;
+    width: 100%;
+    opacity: 0;
+    transition: all 2s ease;
+
+
+}
+.item:hover::after{
+   opacity: 1;
+}
