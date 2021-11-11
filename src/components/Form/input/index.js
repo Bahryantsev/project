@@ -5,8 +5,11 @@ export default class Input extends React.Component{
     render(){
         return(
             <input type = {this.props.type}
-            className = {styles.input}
-            onChange = {this.props.onChange}/>
+            
+            className = {[styles.input, this.props.className].join(' ')}
+            onChange = {this.props.onChange}
+            {...this.props}
+            />
         )
     }
 }
